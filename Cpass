@@ -1,0 +1,8 @@
+from PIL import Image, ImageDraw, ImageFont
+
+path = "./Covidpass.jpg"
+img = ImageTk.PhotoImage(Image.open(path))
+font_type = ImageFont.truetype("Arial.ttf",18)
+draw = ImageDraw.Draw(image)
+draw.text(xy=(50,50)),text="Text one",fill=(255,69,0),font=font_type)
+image.show()
